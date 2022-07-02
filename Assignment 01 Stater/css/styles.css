@@ -1,0 +1,157 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 15px;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 130%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+/*title CSS*/
+.section-title {
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+.info-title {
+  color: #0e2452;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/*profile CSS*/
+.text-info {
+  display: inline-block;
+  width: 70%;
+}
+.image-info {
+  display: inline-block;
+  right: 40px;
+  position: absolute;
+}
+.image-size {
+  width: 133px;
+  height: auto;
+}
+/* section content CSS */
+th,
+td {
+  text-align: left;
+}
+tr {
+  line-height: 30px;
+}
+.time {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+.certificate,
+.experience,
+.activity {
+  display: inline-block;
+  width: 69%;
+}
+.content-item {
+  display: inline;
+  vertical-align: top;
+  border-bottom: 1px solid #9999;
+  position: relative;
+  padding-bottom: 10px;
+}
+.info-table th {
+  padding-right: 40px;
+}
+.skill-table th {
+  padding-right: 175px;
+  width: 105px;
+}
+.certificate-table th {
+  font-weight: normal;
+  padding-right: 130px;
+}
+.certificate p,
+.experience p,
+.activity p,
+#project p {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+span {
+  font-weight: bold;
+}
+.section-content h3 {
+  text-transform: uppercase;
+}
+li {
+  position: relative;
+  left: -20px;
+  padding-left: 8px;
+  padding-bottom: 10px;
+}
+/*create the vertical line to link time section */
+#education ul:before {
+  content: "";
+  position: relative;
+  top: 159px;
+  font-size: 4px;
+  line-height: 4px;
+  padding: 174px 8px 0 0;
+  margin: 0 10px 0 0;
+  border-left: 1px solid #9999;
+  left: -32px;
+}
+#experience ul:before {
+  content: "";
+  position: relative;
+  top: 280px;
+  font-size: 4px;
+  line-height: 4px;
+  padding: 293px 8px 0 0;
+  margin: 0 10px 0 0;
+  border-left: 1px solid #9999;
+  left: -32px;
+}
+#activity ul:before {
+  content: "";
+  position: relative;
+  top: 150px;
+  font-size: 4px;
+  line-height: 4px;
+  padding: 168px 8px 0 0;
+  margin: 0 10px 0 0;
+  border-left: 1px solid #9999;
+  left: -32px;
+}
