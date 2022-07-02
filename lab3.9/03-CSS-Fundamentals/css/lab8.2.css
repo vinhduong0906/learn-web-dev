@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.product {
+  width: 825px;
+  margin: 50px auto;
+}
+body {
+  font-family: sans-serif;
+}
+article {
+  border: 4px solid #000;
+  position: relative;
+}
+.product-title {
+  background-color: rgb(242, 240, 240);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+}
+.product-price {
+  font-size: 24px;
+  float: left;
+  margin-top: 30px;
+}
+.deal {
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: gray;
+
+  margin-bottom: 20px;
+  float: right;
+}
+.product-details h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.product-details li {
+  list-style-type: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+article button {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-top: 2px solid #000;
+}
+article button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+article a {
+  color: #000;
+}
+article a:hover {
+  text-decoration: none;
+}
+.product-title::after {
+  content: "SALE";
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+}
+.color {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.color-black {
+  background-color: #000;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brow {
+  background-color: #885214;
+}
+.product-color {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.product-image,
+.product-info,
+.product-details {
+  float: left;
+  width: 31%;
+}
+.product-info,
+.product-details {
+  margin-left: 20px;
+}
+
+.product-description,
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
