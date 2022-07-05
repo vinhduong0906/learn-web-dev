@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-.product {
+article {
   width: 825px;
   margin: 50px auto;
+}
+.container {
+  display: flex;
+  gap: 30px;
 }
 body {
   font-family: sans-serif;
@@ -22,29 +25,31 @@ article {
   padding: 15px;
 }
 .product-price {
-  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .price {
   font-size: 24px;
-  float: left;
 }
 .deal {
   text-transform: uppercase;
   color: gray;
 
   margin-bottom: 20px;
-  float: right;
 }
 .product-details h3 {
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 30px;
   margin-bottom: 15px;
 }
 .product-details li {
   list-style-type: square;
   margin-left: 20px;
   margin-bottom: 10px;
+}
+.product-info,
+.product-details {
+  margin-top: 30px;
 }
 article button {
   background-color: #000;
@@ -102,21 +107,4 @@ article a:hover {
 .product-color {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-.product-image,
-.product-info,
-.product-details {
-  float: left;
-  width: 31%;
-}
-.product-info,
-.product-details {
-  margin-left: 20px;
-}
-
-.product-description,
-.clear-fix::after {
-  content: "";
-  clear: both;
-  display: block;
 }
