@@ -1,0 +1,3 @@
+[submodule "complete-javascripts-course"]
+	path = complete-javascripts-course
+	url = git@github.com:vinhduong0906/learn-web-dev.git

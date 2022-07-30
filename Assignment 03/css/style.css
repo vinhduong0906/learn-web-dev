@@ -27,7 +27,7 @@ section {
   margin-bottom: 0;
 }
 
-.container {
+#main .container {
   overflow: hidden;
   width: 1170px;
   margin: 0 auto;
@@ -58,10 +58,6 @@ h3 {
   font-size: calc(1.2rem + 0.5vw);
 }
 
-/* .row {
-  width: 100%;
-  margin: 0;
-} */
 ul {
   margin-bottom: 0;
 }
@@ -124,7 +120,7 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-h1,
+#banner-text h1,
 #banner-text span {
   font-weight: 300;
   color: #e9ecef;
@@ -458,6 +454,7 @@ h1 {
   margin-bottom: 0;
 }
 
+/* Style for device has screen smaller than 1200px */
 @media only screen and (max-width: 1200px) {
   .status > span:last-child {
     /* align-items: end; */
@@ -468,6 +465,7 @@ h1 {
   }
 }
 
+/* Style for device has screen smaller than 992px */
 @media only screen and (max-width: 992px) {
   body {
     line-height: 1.5rem;
@@ -485,6 +483,8 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
+/* Style for device has screen smaller than 768px */
 @media only screen and (max-width: 768px) {
   .nav a:nth-child(2) {
     margin-right: 10px;
@@ -544,11 +544,15 @@ h1 {
     padding: 0 20px;
   }
 }
+
+/* Style for device has screen lager than 768px */
 @media (min-width: 768px) {
   .container {
     max-width: 95%;
   }
 }
+
+/* Style for device has screen smaller than 576px */
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
