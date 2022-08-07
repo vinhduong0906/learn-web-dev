@@ -1,0 +1,122 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="original trombones logo"
+        />
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#header">Features</a></li>
+          <li><a class="nav-link" href="#header">How It works</a></li>
+          <li><a class="nav-link" href="#header">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email address" />
+        <input type="submit" id="submit" value="Ge started" />
+      </form>
+    </section>
+    <section class="video-section">
+   <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+.logo {
+  width: 60vw;
+}
+#header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 75px;
+  width: 100%;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav-bar {
+  font-weight: 400;
+}
+nav ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+.hero-section {
+  margin: 100px auto;
+  text-align: center;
+}
+h2 {
+  font-size: 2.4rem;
+}
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+input#email {
+  height: 36px;
+  width: 350px;
+  font-size: 1.2rem;
+}
+input#submit {
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgb(241, 196, 15);
+  border: navajowhite;
+  cursor: pointer;
+}
+.video-section {
+  text-align: center;
+  max-width:700px;
+}
+#video {
+width: 100%;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+** end of undefined **
+
